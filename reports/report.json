@@ -1,0 +1,94 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "WEB - Prueba para Cencosud",
+    "line": 1,
+    "id": "web---prueba-para-cencosud",
+    "tags": [],
+    "uri": "features\\scenarios\\login.feature",
+    "elements": [
+      {
+        "id": "web---prueba-para-cencosud;como-un-usuario-quisiera-realizar-una-compra",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Como un usuario quisiera realizar una compra",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\hooks.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Ingreso a la pantalla de login",
+            "match": {
+              "location": "features\\steps\\home.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Realizo 1000 pedidos",
+            "match": {
+              "location": "features\\steps\\home.steps.js:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 150504000000,
+              "error_message": "Error: {\n  code: 'E24',\n  isTestCafeError: true,\n  callsite: CallsiteRecord {\n    filename: 'H:\\\\Coderio\\\\Librerias\\\\cencosud-FE-functional-test\\\\features\\\\pages\\\\/home.page.js',\n    lineNum: 425,\n    callsiteFrameIdx: 6,\n    stackFrames: [\n      [Object], [Object],    [Object],\n      [Object], [Object],    [Object],\n      [Object], [Object],    [Object],\n      [Object], [Object],    [Object],\n      [Object], CallSite {}, [Object],\n      [Object], [Object],    [Object],\n      [Object], [Object],    [Object],\n      [Object], [Object],    CallSite {},\n      [Object], [Object]\n    ],\n    isV8Frames: true\n  },\n  apiFnChain: [\n    \"Selector('#creditCardpayment-card-0Brand')\",\n    \".with({ boundTestRun: <ref *1> TestController { _executionContext: null, testRun: TestRun { captureRejections: false, warningLog: [WarningLog], opts: [Object: null prototype], test: [Test], browserConnection: [BrowserConnection], unstable: false, browser: [Object], phase: 'inTest', driverTaskQueue: [], testDoneCommandQueued: false, activeDialogHandler: null, activeIframeSelector: null, speed: 1, pageLoadTimeout: 3000, disablePageReloads: false, disablePageCaching: false, disableMultipleWindows: false, requestTimeout: [Object], session: [SessionController], consoleMessages: [BrowserConsoleMessages], pendingRequest: [Object], pendingPageError: null, controller: [Circular *1], ctx: [Object: null prototype] {}, fixtureCtx: [Object: null prototype] {}, currentRoleId: null, usedRoleStates: [Object: null prototype] {}, errs: [], lastDriverStatusId: '4099.5999999996275', lastDriverStatusResponse: null, fileDownloadingHandled: false, resolveWaitForFileDownloadingPromise: null, addingDriverTasksCount: 0, debugging: false, debugOnFail: false, disableDebugBreakpoints: false, debugReporterPluginHost: [ReporterPluginHost], browserManipulationQueue: [BrowserManipulationQueue], debugLog: [TestRunDebugLog], quarantine: null, debugLogger: [Object], observedCallsites: [ObservedCallsitesStorage], compilerService: undefined, asyncJsExpressionCallsites: Map(0) {}, replicator: [Object], disconnected: false, errScreenshotPath: null, [Symbol(testRun)]: true }, executionChain: Promise { _then: [], then: [Function (anonymous)] }, warningLog: WarningLog { globalLog: [WarningLog], messages: [] } } })\"\n  ],\n  apiFnIndex: 0\n}\n    at H:\\Coderio\\Librerias\\cencosud-FE-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:95:19\n    at Generator.throw (<anonymous>:null:null)\n    at asyncGeneratorStep (H:\\Coderio\\Librerias\\cencosud-FE-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:18:103)\n    at _throw (H:\\Coderio\\Librerias\\cencosud-FE-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:20:291)\n"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "retorna la pagina home",
+            "match": {
+              "location": "features\\steps\\home.steps.js:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\hooks.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\hooks.js:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
